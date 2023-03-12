@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container">
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Processing Ordering</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Form Submitted</h6>
+          <p class="card-text">Thanks. An agent would reach out to you to confirm your purchase</p>
+          <form action="{% url 'product_list' %}">
+            {% csrf_token %}
+            <button class="btn btn-primary" type="submit">Home</button>
+            </form>
+          
+        </div>
+      </div>
+</div>
+
+
+{% endblock %}

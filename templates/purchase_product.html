@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% load widget_tweaks %}
+
+
+{% block content %}
+<h3>Purchase {{ product.name }}</h3>
+<div class="card" style="width: 60rem;">
+    <div class="card-body">
+<form method="post">
+    {% csrf_token %}
+    <div class="form-group">
+        <label for="{{ form.name.id_for_label }}" class="control-label">Name:</label>
+        {% render_field form.name class+="form-control" %}
+        {% if form.name.help_text %}
+          <small class="form-text text-muted">{{ form.name.help_text }}</small>
+        {% endif %}
+        {% for error in form.name.errors %}
+          <span class="text-danger">{{ error }}</span>
+        {% endfor %}
+      </div>
+    
+      <div class="form-group">
+        <label for="{{ form.phone_number.id_for_label }}" class="control-label">Phone Number:</label>
+        {% render_field form.phone_number class+="form-control" %}
+        {% if form.phone_number.help_text %}
+          <small class="form-text text-muted">{{ form.phone_number.help_text }}</small>
+        {% endif %}
+        {% for error in form.phone_number.errors %}
+          <span class="text-danger">{{ error }}</span>
+        {% endfor %}
+      </div>
+
+      <div class="form-group">
+        <label for="{{ form.location.id_for_label }}" class="control-label">Location</label>
+        {% render_field form.location class+="form-control" %}
+        {% if form.location.help_text %}
+          <small class="form-text text-muted">{{ form.location.help_text }}</small>
+        {% endif %}
+        {% for error in form.location.errors %}
+          <span class="text-danger">{{ error }}</span>
+        {% endfor %}
+      </div>
+    
+      <div class="form-group">
+        <label for="{{ form.city.id_for_label }}" class="control-label">City:</label>
+        {% render_field form.city class+="form-control" %}
+        {% if form.city.help_text %}
+          <small class="form-text text-muted">{{ form.city.help_text }}</small>
+        {% endif %}
+        {% for error in form.city.errors %}
+          <span class="text-danger">{{ error }}</span>
+        {% endfor %}
+      </div>
+      <div class="form-group">
+        <label for="{{ form.quantity.id_for_label }}" class="control-label">Quantity:</label>
+        {% render_field form.quantity class+="form-control" %}
+        {% if form.quantity.help_text %}
+          <small class="form-text text-muted">{{ form.quantity.help_text }}</small>
+        {% endif %}
+        {% for error in form.quantity.errors %}
+          <span class="text-danger">{{ error }}</span>
+        {% endfor %}
+      </div>
+
+    <!-- <button class="btn btn-primary" type="submit">Submit</button> -->
+    <form action="{% url 'success' %}" method="post">
+        {% csrf_token %}
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+</form>
+</div>
+</div>
+{% endblock %}

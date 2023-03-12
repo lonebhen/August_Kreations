@@ -1,0 +1,17 @@
+from twilio.rest import Client
+
+
+def send_message(product_name,name,phone_number,location,city,quantity):
+    account_sid = 'AC1bd906b90655afdf63d8012d6a0e691b' 
+    auth_token = 'a6d75c5d1c7bb31742f014d79439d858'
+    client = Client(account_sid, auth_token)
+
+
+    message = client.messages \
+                .create(
+                     body="{} wants to buy {} in a quantity of {} located in {} in the city {} reach out on {}".format(name,product_name,quantity,location,city,phone_number),
+                     from_='+15673444515',
+                     to='+2335775759'
+                 )
+    
+    # print(message)
