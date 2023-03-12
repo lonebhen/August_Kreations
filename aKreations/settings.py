@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'base.apps.BaseConfig',
-    'rest_framework',
+    
     'widget_tweaks',
     'django_twilio'
 ]
