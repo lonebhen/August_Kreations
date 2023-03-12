@@ -132,3 +132,7 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # FORM_RENDERER = "django.forms.renderers.Jinja2DivFormRenderer"
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://web-production-61d78.up.railway.app/'
+]
