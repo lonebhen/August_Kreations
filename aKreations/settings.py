@@ -119,6 +119,10 @@ USE_I18N = True
 
 USE_TZ = True
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://web-production-61d78.up.railway.app/'
+]
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
@@ -133,6 +137,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # FORM_RENDERER = "django.forms.renderers.Jinja2DivFormRenderer"
 
-CSRF_TRUSTED_ORIGINS = [
-    'https://web-production-61d78.up.railway.app/'
-]
+
