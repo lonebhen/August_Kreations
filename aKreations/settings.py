@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-0yr+z&+98u4+no3pea8p%5qi1b(59=^q$u)wyy=7v9tb7p=)-1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['augustkreations.up.railway.app']
 
 
 # Application definition
@@ -120,8 +120,8 @@ USE_I18N = True
 USE_TZ = True
 
 CSRF_TRUSTED_ORIGINS =['https://augustkreations.up.railway.app']
-CSRF_COOKIE_DOMAIN = ['https://augustkreations.up.railway.app']
-CSRF_COOKIE_SECURE = True
+CSRF_COOKIE_DOMAIN = ['augustkreations.up.railway.app']
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
