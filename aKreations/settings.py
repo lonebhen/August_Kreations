@@ -32,6 +32,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['*']
 
 
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -122,7 +123,7 @@ USE_I18N = True
 
 USE_TZ = True
 
-CSRF_TRUSTED_ORIGINS =['https://augustkreations.up.railway.app']
+CSRF_TRUSTED_ORIGINS =['*']
 CSRF_COOKIE_DOMAIN = ['augustkreations.up.railway.app']
 
 
