@@ -125,7 +125,7 @@ CSRF_COOKIE_DOMAIN = ['augustkreations.up.railway.app']
 
 CSRF_COOKIE_SECURE = False
 SESSION_COOKIE_SECURE = False
-CSRF_COOKIE_HTTPONLY = True
+CSRF_COOKIE_HTTPONLY = False
 
 
 # Static files (CSS, JavaScript, Images)
