@@ -123,7 +123,7 @@ USE_I18N = True
 
 USE_TZ = True
 
-CSRF_TRUSTED_ORIGINS =['*']
+CSRF_TRUSTED_ORIGINS =['https://augustkreations.up.railway.app']
 # CSRF_COOKIE_DOMAIN = ['*']
 
 
