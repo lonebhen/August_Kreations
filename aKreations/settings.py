@@ -123,9 +123,9 @@ CSRF_TRUSTED_ORIGINS =['https://augustkreations.up.railway.app']
 CSRF_COOKIE_DOMAIN = ['augustkreations.up.railway.app']
 
 
-CSRF_COOKIE_SECURE = False
-SESSION_COOKIE_SECURE = False
-SESSION_COOKIE_SAMESITE = 'None'
+# CSRF_COOKIE_SECURE = False
+# SESSION_COOKIE_SECURE = False
+# SESSION_COOKIE_SAMESITE = 'None'
 
 
 # Static files (CSS, JavaScript, Images)
