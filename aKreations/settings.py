@@ -123,6 +123,10 @@ CSRF_TRUSTED_ORIGINS =['https://augustkreations.up.railway.app']
 CSRF_COOKIE_DOMAIN = ['augustkreations.up.railway.app']
 
 
+CSRF_COOKIE_SECURE = False
+SESSION_COOKIE_SECURE = False
+
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
