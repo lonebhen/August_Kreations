@@ -28,12 +28,12 @@ def purchase_product(request, product_id):
             quantity = form.cleaned_data['quantity']
             # email = form.cleaned_data['email']
 
-            # code logic here
+            
 
-            print(name)
-            print(product.name)
+            # print(name)
+            # print(product.name)
 
-            # send_message(product_name=product.name,name=name,phone_number=phone_number,location=location,city=city,quantity=quantity)
+            send_message(product_name=product.name,name=name,phone_number=phone_number,location=location,city=city,quantity=quantity)
 
             return render(request, 'success.html')
 
