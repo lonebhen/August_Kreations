@@ -119,7 +119,7 @@ USE_I18N = True
 
 USE_TZ = True
 
-CSRF_TRUSTED_ORIGINS =['web-production-61d78.up.railway.app/admin']
+CSRF_TRUSTED_ORIGINS =['https://web-production-61d78.up.railway.app']
 CSRF_COOKIE_DOMAIN = ['web-production-61d78.up.railway.app']
 
 
