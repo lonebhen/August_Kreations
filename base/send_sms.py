@@ -11,7 +11,7 @@ def send_message(product_name,name,phone_number,location,city,quantity):
                 .create(
                      body="{} wants to buy {} in a quantity of {} located in {} in the city {} reach out on {}".format(name,product_name,quantity,location,city,phone_number),
                      from_='+15673444515',
-                     to='+233545775759'
+                     to='+233544055730'
                  )
     
     # print(message)
